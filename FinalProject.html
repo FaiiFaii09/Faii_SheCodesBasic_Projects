@@ -7,6 +7,7 @@
     <title>English.Kid.Everyday</title>
 </head>
 <style>
+
     body {
         background:#fffde7;
     }
@@ -26,24 +27,24 @@
    }
    li {
        font-size: 17px;
-        display: inline;
-        margin: 0 15px;
-   }
+       display: inline;
+       margin: 0 15px;
+        }
    
     h1 {
         text-align: center;
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 40px;
+        font-size: 35px;
         background: #ffc400;
         margin-top: 0px;
-            margin-right: 100px;
-            margin-left: 100px;
-            margin-bottom: 0px;
-            padding-top: 5px;
-            padding-bottom: 5px;
-            border-radius:  10px 100px / 120px;
-            border: thick double beige;
-    }
+        margin-right: 100px;
+        margin-left: 100px;
+        margin-bottom: 0px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius:  10px 100px / 120px;
+        border: thick double beige;
+        }
     h2 {
          text-align: center;
          margin-top: 15px;
@@ -66,11 +67,11 @@
       font-size: 20px;
       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       margin-top: 20px;
-            margin-right: 100px;
-            margin-left: 100px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            border-radius: 50% 20% / 10% 40%;
+      margin-right: 100px;
+      margin-left: 100px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 50% 20% / 10% 40%;
      }
     a {
         text-decoration: none;
@@ -137,17 +138,13 @@
         font-size: 17px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         background: white;
-            color:blue;
-            padding: 10px 15px;
-            border: 1px solid white;
-            border-radius: 20px 20px 20px 20px;
-            transition: all 200ms ease-in-out;
+        color:blue;
+        padding: 10px 15px;
+        border: 1px solid white;
+        border-radius: 20px 20px 20px 20px;
+        transition: all 200ms ease-in-out;
     }
-    .content {
-       list-style-type: square;
-        padding-right: 0px;
-        margin: 40px; 
-    }
+  
     .podcast {
         display: block;
         margin: 0 auto;
@@ -162,9 +159,11 @@
                 font-family:'Chilanka', cursive;
                 src: url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
         }
+    }
 </style>
 
 <body>
+    <div class="container">
     <nav>
         <img class="miniLogo" src="logo.png" width="100" />
         <ul class="mynavi">
@@ -172,8 +171,6 @@
                 <button class="logIn">
                  Log in
                 </button>
-            </l>
-            <li class="mynavi">
             </li>
             <li class="mynavi">
                 <a> Contact Us </a>
@@ -245,10 +242,17 @@
 <p class="ending">
     Faii Athiprayoon © 2020
 </p>
+</div>
 <script>
 function signUp() {
     let firstName = prompt("What is your first name?");
+    while(!firstName === " ") {
+       firstName = prompt("What is your first name?");
+    }
     let lastName = prompt("What is your last name?");
+    while (!lastName === " ") {
+        lastName = prompt("What is your last name?");
+    }
     let email = prompt("What is your email address?");
     let fullName = firstName + " " + lastName;
 
